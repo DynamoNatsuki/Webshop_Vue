@@ -30,7 +30,7 @@ export default {
       { id: 4, name: 'Cubes', price: 50, image: 'Cubes.jpg', description: 'Tärningar i metall' },
       { id: 5, name: 'Faucet', price: 300, image: 'Faucet.jpg', description: 'En kran av fin kvalité' },
       { id: 6, name: 'Old camera', price: 5000, image: 'Old_camera.jpg', description: 'En fin gammal kamera som fortfarande fungerar' },
-      { id: 7, name: 'Star Wars figurines', price: 20000, image: 'SW_Figures.jpg', description: 'Välbevarade Star Wars figurer' }
+      { id: 7, name: 'Star Wars figurines', price: 20000, image: 'SW_Figures.png', description: 'Välbevarade Star Wars figurer' }
     ];
     this.product = products.find(product => product.id == productId);
   }

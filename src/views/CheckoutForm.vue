@@ -46,9 +46,13 @@
       // Hämta produktinfo baserat på query-parametern
       const productId = this.$route.query.productId;
       const products = [
-        { id: 1, name: 'Produkt 1', price: 100 },
-        { id: 2, name: 'Produkt 2', price: 200 },
-        { id: 3, name: 'Produkt 3', price: 300 }
+        { id: 1, name: 'Automobile', price: 100000 },
+        { id: 2, name: 'Clock', price: 2000 },
+        { id: 3, name: 'Coffee beans', price: 70 },
+        { id: 4, name: 'Cubes', price: 50},
+        { id: 5, name: 'Faucet', price: 300},
+        { id: 6, name: 'Old camera', price: 5000},
+        { id: 7, name: 'Star Wars figurines', price: 20000}
       ];
       this.product = products.find(product => product.id == productId);
     },
