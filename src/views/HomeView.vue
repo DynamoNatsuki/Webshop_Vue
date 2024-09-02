@@ -4,7 +4,7 @@
     <div class="product-list">
       <!-- Loopar genom produkter och visar dem -->
       <div v-for="product in products" :key="product.id" class="product">
-        <img :src="product.image" :alt="product.name" class="product-image" />
+        <img :src="require(`@/assets/${product.image}`)" :alt="product.name" class="product-image" />
         <h2>{{ product.name }}</h2>
         <p>{{ product.price }} kr</p>
         <!-- Länk till produktdetaljsidan -->
@@ -23,9 +23,13 @@ export default {
   data() {
     return {
       products: [
-        { id: 1, name: 'Produkt 1', price: 100, image: 'https://via.placeholder.com/150' },
-        { id: 2, name: 'Produkt 2', price: 200, image: 'https://via.placeholder.com/150' },
-        { id: 3, name: 'Produkt 3', price: 300, image: 'https://via.placeholder.com/150' }
+        { id: 1, name: 'Automobile', price: 100000, image: 'Automobile.jpg' },
+        { id: 2, name: 'Clock', price: 2000, image: 'Clock.jpg' },
+        { id: 3, name: 'Coffee beans', price: 70, image: 'Coffee_beans.jpg' },
+        { id: 4, name: 'Cubes', price: 50, image: 'Cubes.jpg'},
+        { id: 5, name: 'Faucet', price: 300, image: 'Faucet.jpg'},
+        { id: 6, name: 'Old camera', price: 5000, image: 'Old_camera.jpg'},
+        { id: 7, name: 'Star Wars figurines', price: 20000, image: 'SW_Figures.jpg'}
       ]
     };
   }
@@ -46,8 +50,8 @@ export default {
 }
 
 .product-image {
-  width: 100%;
-  height: auto;
+  width: 150px;
+  height: 150px;
 }
 </style>
 
